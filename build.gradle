@@ -6,6 +6,10 @@ buildscript {
 plugins {
     id 'com.android.application' version '7.1.0' apply false
     id 'com.android.library' version '7.1.0' apply false
+    apply plugin: 'maven-publish'
+    
+group = 'com.github.Apsanishant'
+
 }
 task clean(type: Delete) {
     delete rootProject.buildDir
